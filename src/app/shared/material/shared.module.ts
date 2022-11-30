@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MaterialModule } from './material.module';
 
 // DeclarationsToExport
@@ -24,7 +23,6 @@ const importsToExport = [
   FontAwesomeModule,
   FormsModule,
   MaterialModule,
-  NgbModule,
 ];
 
 const localImports = [RouterModule];

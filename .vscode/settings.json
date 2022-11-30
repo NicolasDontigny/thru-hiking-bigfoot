@@ -1,3 +1,18 @@
 {
+  "editor.tabSize": 2,
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript"
+  ],
+  "html.format.wrapAttributes": "force-expand-multiline",
+  "generate-translation.path": "/src/assets/translations",
   "typescript.tsdk": "node_modules\\typescript\\lib"
 }

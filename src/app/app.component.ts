@@ -7,8 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PCT-Resupply';
-
-  test = ['hello',
-    'hello2',
-    'hello3'];
 }

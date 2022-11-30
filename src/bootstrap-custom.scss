@@ -1,5 +1,5 @@
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
 
 $theme-colors: (
   "primary": #1F2A44,
@@ -12,4 +12,4 @@ $theme-colors: (
   "dark": #131111,
 );
 
-@import "~bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SubHomeComponent } from './sub-home.component';
+import { TimelineComponent } from './timeline.component';
 
-describe('SubHomeComponent', () => {
-  let component: SubHomeComponent;
-  let fixture: ComponentFixture<SubHomeComponent>;
+describe('TimelineComponent', () => {
+  let component: TimelineComponent;
+  let fixture: ComponentFixture<TimelineComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SubHomeComponent ]
+      declarations: [ TimelineComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SubHomeComponent);
+    fixture = TestBed.createComponent(TimelineComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { SubHomeComponent } from './sub-home.component';
+import { HomeComponent } from './home.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: SubHomeComponent,
-    data: { routeName: 'SubHome' },
+    component: HomeComponent,
+    data: { routeName: 'Home' },
   },
 ];
 
@@ -15,4 +15,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class SubHomeRoutingModule { }
+export class HomeRoutingModule { }

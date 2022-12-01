@@ -4,9 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MaterialModule } from './material/material.module';
+import { TimelineComponent } from './timeline/timeline.component';
 
 // DeclarationsToExport
-const components: any[] = [];
+const components = [
+  TimelineComponent,
+];
 const directives: any[] = [];
 const pipes: any[] = [];
 
@@ -33,6 +36,7 @@ const entryComponents: any[] = [];
   declarations: [
     ...localDeclarations,
     ...declarationsToExport,
+    TimelineComponent,
   ],
   exports: [
     ...declarationsToExport,

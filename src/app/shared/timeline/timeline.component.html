@@ -1,0 +1,16 @@
+<div id="timeline-container">
+  <ul class="tl">
+    <li
+      *ngFor="let resupplyPoint of resupplyPoints"
+      class="tl-item"
+    >
+      <div class="timestamp">
+        mile {{ resupplyPoint.mileMarker }}
+      </div>
+      <div *ngFor="let location of resupplyPoint.locations">
+        <div class="item-title">{{ location.name }}</div>
+        <div class="item-detail">{{ location.milesFromTrail }} miles from trail</div>
+      </div>
+    </li>
+  </ul>
+</div>

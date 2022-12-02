@@ -4,11 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MaterialModule } from './material/material.module';
-import { TimelineComponent } from './timeline/timeline.component';
+import { ResupplyTimelineComponent } from './resupply-timeline/resupply-timeline.component';
+import { ResupplyPointMarkerComponent } from './resupply-timeline/resupply-point-marker/resupply-point-marker.component';
 
 // DeclarationsToExport
 const components = [
-  TimelineComponent,
+  ResupplyTimelineComponent,
 ];
 const directives: any[] = [];
 const pipes: any[] = [];
@@ -36,7 +37,8 @@ const entryComponents: any[] = [];
   declarations: [
     ...localDeclarations,
     ...declarationsToExport,
-    TimelineComponent,
+    ResupplyTimelineComponent,
+    ResupplyPointMarkerComponent,
   ],
   exports: [
     ...declarationsToExport,

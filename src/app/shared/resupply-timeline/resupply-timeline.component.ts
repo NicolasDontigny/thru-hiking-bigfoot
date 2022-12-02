@@ -27,11 +27,11 @@ export interface ResupplyPoint {
 }
 
 @Component({
-  selector: 'pct-timeline',
-  templateUrl: './timeline.component.html',
-  styleUrls: ['./timeline.component.less']
+  selector: 'pct-resupply-timeline',
+  templateUrl: './resupply-timeline.component.html',
+  styleUrls: ['./resupply-timeline.component.less']
 })
-export class TimelineComponent implements OnInit {
+export class ResupplyTimelineComponent implements OnInit {
   resupplyPoints: ResupplyPoint[] = [
     {
       mileMarker: 2500,

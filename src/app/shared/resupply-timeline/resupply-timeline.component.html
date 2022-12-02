@@ -5,7 +5,10 @@
       class="timeline-resupply-point"
     >
       <div class="timeline-mile-marker">
-        mile {{ resupplyPoint.mileMarker }}
+        mile <strong>{{ resupplyPoint.mileMarker }}</strong>
+      </div>
+      <div class="timeline-color-circle">
+        <div class="timeline-bottom-connector"></div>
       </div>
       <div *ngFor="let location of resupplyPoint.locations">
         <div class="resupply-point-name">{{ location.name }}</div>

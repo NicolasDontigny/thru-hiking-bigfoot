@@ -1,0 +1,31 @@
+<div class="resupply-point-container">
+  <div class="timeline-mile-marker">
+    mile <strong>{{ point.mileMarker }}</strong>
+  </div>
+
+  <div
+    *ngIf="colors"
+    [style.background-color]="colors.main"
+    [style.border-color]="colors.border"
+    class="timeline-color-circle"
+  >
+    <!-- <div
+      *ngIf="distanceFromNextResupply"
+      [style.height]="distanceFromNextResupply + 'px'"
+      [style.bottom]="(-distanceFromNextResupply - 12) + 'px'"
+      class="timeline-bottom-connector"
+    ></div> -->
+  </div>
+
+  <div *ngFor="let location of point.locations">
+    <div class="resupply-point-name">{{ location.name }}</div>
+    <div class="resupply-point-miles-from-trail">{{ location.milesFromTrail }} miles from trail</div>
+  </div>
+</div>
+<div
+  *ngIf="distanceFromNextResupply"
+  [style.height]="distanceFromNextResupply + 'px'"
+  class="timeline-bottom-connector-container"
+>
+  <div class="timeline-bottom-connector"></div>
+</div>

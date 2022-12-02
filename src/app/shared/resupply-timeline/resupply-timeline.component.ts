@@ -34,7 +34,7 @@ export interface ResupplyPoint {
 export class ResupplyTimelineComponent implements OnInit {
   resupplyPoints: ResupplyPoint[] = [
     {
-      mileMarker: 2500,
+      mileMarker: 2623,
       locations: [
         {
           name: 'Mazama',

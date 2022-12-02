@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MaterialModule } from './material/material.module';
 import { ResupplyTimelineComponent } from './resupply-timeline/resupply-timeline.component';
-import { ResupplyPointMarkerComponent } from './resupply-timeline/resupply-point-marker/resupply-point-marker.component';
+import { ResupplyPointComponent } from './resupply-timeline/resupply-point/resupply-point.component';
 
 // DeclarationsToExport
 const components = [
@@ -38,7 +38,7 @@ const entryComponents: any[] = [];
     ...localDeclarations,
     ...declarationsToExport,
     ResupplyTimelineComponent,
-    ResupplyPointMarkerComponent,
+    ResupplyPointComponent,
   ],
   exports: [
     ...declarationsToExport,

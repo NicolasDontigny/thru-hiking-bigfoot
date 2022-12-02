@@ -13,15 +13,15 @@ export const getResupplyMainColor: { [key in ResupplyType]: ResupplyColors } = {
   },
   [ResupplyType.yellow]: {
     main: 'yellow',
-    border: '#fce300',
+    border: '#ffd800',
   },
   [ResupplyType.orange]: {
-    main: 'lightgreen',
-    border: 'green',
+    main: '#ffbb00',
+    border: '#ed9200',
   },
   [ResupplyType.red]: {
-    main: 'lightgreen',
-    border: 'green',
+    main: '#f2946f',
+    border: '#ef4b00',
   },
   [ResupplyType.blue]: {
     main: 'lightgreen',

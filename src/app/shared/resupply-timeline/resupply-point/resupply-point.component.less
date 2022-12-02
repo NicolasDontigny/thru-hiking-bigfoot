@@ -1,17 +1,22 @@
 @timeline-circle-diameter: 56px;
 @timeline-circle-border: 12px;
+@timeline-circle-left-margin: 12px;
 @timeline-connector-width: 4px;
+@timeline-mile-marker-width: 120px;
 
 .resupply-point-container {
   display: flex;
   align-items: center;
-
-  // margin: 60px 0;
 }
 
 .timeline-mile-marker {
-  width: 120px;
+  width: @timeline-mile-marker-width;
   text-align: right;
+
+  .timeline-mile-marker-number {
+    font-size: 16px;
+    font-weight: bold;
+  }
 }
 
 .resupply-point-name {
@@ -29,7 +34,7 @@
   background-color: lightgreen;
   border: @timeline-circle-border solid;
   border-radius: 50%;
-  margin-left: 12px;
+  margin-left: @timeline-circle-left-margin;
   margin-right: 24px;
 }
 
@@ -41,6 +46,6 @@
     height: 100%;
     background-color: blue;
 
-    margin-left: calc(120px + 12px + @timeline-circle-border + (@timeline-circle-diameter / 2) - (@timeline-connector-width / 2));
+    margin-left: calc(@timeline-mile-marker-width + @timeline-circle-left-margin + @timeline-circle-border + (@timeline-circle-diameter / 2) - (@timeline-connector-width / 2));
   }
 }

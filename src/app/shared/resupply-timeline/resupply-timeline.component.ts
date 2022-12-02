@@ -62,7 +62,7 @@ export class ResupplyTimelineComponent implements OnInit {
           name: 'Stevens Pass',
           milesFromTrail: 0,
           locationType: ResupplyLocationType.resort,
-          resupplyType: ResupplyType.red,
+          resupplyType: ResupplyType.green,
         },
       ]
     }

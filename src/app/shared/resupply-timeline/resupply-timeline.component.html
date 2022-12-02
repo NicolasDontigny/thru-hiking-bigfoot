@@ -1,15 +1,16 @@
 <div id="timeline-container">
   <ul class="timeline-list">
     <li
-      *ngFor="let resupplyPoint of resupplyPoints"
+      *ngFor="let resupplyPoint of resupplyPoints; let last = last"
       class="timeline-resupply-point"
     >
       <div class="timeline-mile-marker">
         mile <strong>{{ resupplyPoint.mileMarker }}</strong>
       </div>
-      <div class="timeline-color-circle">
+      <pct-resupply-point-marker [hideBorder]="last"></pct-resupply-point-marker>
+      <!-- <div class="timeline-color-circle">
         <div class="timeline-bottom-connector"></div>
-      </div>
+      </div> -->
       <div *ngFor="let location of resupplyPoint.locations">
         <div class="resupply-point-name">{{ location.name }}</div>
         <div class="resupply-point-miles-from-trail">{{ location.milesFromTrail }} miles from trail</div>

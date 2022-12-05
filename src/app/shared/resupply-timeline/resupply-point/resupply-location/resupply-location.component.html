@@ -1,0 +1,14 @@
+<div class="resupply-point-location-container">
+  <div
+    *ngIf="colors"
+    [style.background-color]="colors.main"
+    [style.border-color]="colors.border"
+    class="timeline-color-circle"
+  >
+  </div>
+
+  <div>
+    <div class="resupply-point-name">{{ location.name }}</div>
+    <div class="resupply-point-miles-from-trail">{{ location.milesFromTrail }} miles from trail</div>
+  </div>
+</div>

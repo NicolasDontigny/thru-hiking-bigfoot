@@ -5,24 +5,30 @@
   </div>
 
   <div
-    *ngIf="colors"
-    [style.background-color]="colors.main"
-    [style.border-color]="colors.border"
-    class="timeline-color-circle"
+    *ngFor="let location of point.locations"
+    class="resupply-point-location-container"
   >
-  </div>
+    <pct-resupply-location [location]="location"></pct-resupply-location>
+    <!-- <div
+      *ngIf="colors"
+      [style.background-color]="colors.main"
+      [style.border-color]="colors.border"
+      class="timeline-color-circle"
+    >
+    </div>
 
-  <div *ngFor="let location of point.locations">
-    <div class="resupply-point-name">{{ location.name }}</div>
-    <div class="resupply-point-miles-from-trail">{{ location.milesFromTrail }} miles from trail</div>
+    <div>
+      <div class="resupply-point-name">{{ location.name }}</div>
+      <div class="resupply-point-miles-from-trail">{{ location.milesFromTrail }} miles from trail</div>
+    </div> -->
   </div>
 </div>
+
 <div
   *ngIf="distanceFromNextResupply"
   [style.height]="distanceFromNextResupply * heightMileScale + 'px'"
   class="timeline-bottom-connector-container"
 >
-  <div class="timeline-bottom-connector"></div>
   <div class="timeline-vertical-mile-marker">
     <fa-icon
       class="icon mb-1"
@@ -33,5 +39,7 @@
       class="icon mt-1"
       icon="chevron-down"
     ></fa-icon>
+  </div>
+  <div class="timeline-bottom-connector">
   </div>
 </div>

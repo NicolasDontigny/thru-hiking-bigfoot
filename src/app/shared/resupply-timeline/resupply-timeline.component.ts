@@ -62,7 +62,53 @@ export class ResupplyTimelineComponent implements OnInit {
           name: 'Stevens Pass',
           milesFromTrail: 0,
           locationType: ResupplyLocationType.resort,
+          resupplyType: ResupplyType.red,
+        },
+        {
+          name: 'Skykomish',
+          milesFromTrail: 15,
+          locationType: ResupplyLocationType.village,
+          resupplyType: ResupplyType.orange,
+        },
+        {
+          name: 'Leavenworth',
+          milesFromTrail: 35.2,
+          locationType: ResupplyLocationType.village,
+          resupplyType: ResupplyType.yellow,
+        },
+        {
+          name: 'Wenatchee',
+          milesFromTrail: 57.7,
+          locationType: ResupplyLocationType.town,
           resupplyType: ResupplyType.green,
+        },
+      ],
+    },
+    {
+      mileMarker: 2394.1,
+      locations: [
+        {
+          name: 'Snoqualmie Pass',
+          milesFromTrail: 0.2,
+          locationType: ResupplyLocationType.resort,
+          resupplyType: ResupplyType.red,
+        },
+      ],
+    },
+    {
+      mileMarker: 2295.9,
+      locations: [
+        {
+          name: 'White Pass',
+          milesFromTrail: 0.5,
+          locationType: ResupplyLocationType.resort,
+          resupplyType: ResupplyType.red,
+        },
+        {
+          name: 'Packwood',
+          milesFromTrail: 19.9,
+          locationType: ResupplyLocationType.town,
+          resupplyType: ResupplyType.yellow,
         },
       ],
     },

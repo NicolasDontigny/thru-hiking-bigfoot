@@ -1,0 +1,27 @@
+@timeline-circle-diameter: 56px;
+@timeline-circle-border: 12px;
+@timeline-circle-left-margin: 12px;
+
+.resupply-point-location-container {
+  display: flex;
+  align-items: center;
+}
+
+.resupply-point-name {
+  font-size: 18px;
+}
+
+.resupply-point-miles-from-trail {
+  font-size: 14px;
+}
+
+.timeline-color-circle {
+  box-sizing: content-box;
+  width: @timeline-circle-diameter;
+  height: @timeline-circle-diameter;
+  background-color: lightgreen;
+  border: @timeline-circle-border solid;
+  border-radius: 50%;
+  margin-left: @timeline-circle-left-margin;
+  margin-right: 24px;
+}

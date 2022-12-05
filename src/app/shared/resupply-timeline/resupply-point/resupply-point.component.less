@@ -1,6 +1,5 @@
-@timeline-circle-diameter: 56px;
-@timeline-circle-border: 12px;
-@timeline-circle-left-margin: 12px;
+@import './resupply-location/resupply-location.component.less';
+
 @timeline-connector-width: 4px;
 @timeline-mile-marker-width: 120px;
 
@@ -19,25 +18,6 @@
   }
 }
 
-.resupply-point-name {
-  font-size: 18px;
-}
-
-.resupply-point-miles-from-trail {
-  font-size: 14px;
-}
-
-.timeline-color-circle {
-  box-sizing: content-box;
-  width: @timeline-circle-diameter;
-  height: @timeline-circle-diameter;
-  background-color: lightgreen;
-  border: @timeline-circle-border solid;
-  border-radius: 50%;
-  margin-left: @timeline-circle-left-margin;
-  margin-right: 24px;
-}
-
 .timeline-bottom-connector-container {
   display: flex;
 
@@ -45,14 +25,14 @@
     width: @timeline-connector-width;
     height: 100%;
     background-color: blue;
-
-    margin-left: calc(@timeline-mile-marker-width + @timeline-circle-left-margin + @timeline-circle-border + (@timeline-circle-diameter / 2) - (@timeline-connector-width / 2));
   }
 
   .timeline-vertical-mile-marker {
     height: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-left: 12px;
+    width: calc(@timeline-mile-marker-width + @timeline-circle-left-margin + @timeline-circle-border + (@timeline-circle-diameter / 2) - (@timeline-connector-width / 2));
   }
 }

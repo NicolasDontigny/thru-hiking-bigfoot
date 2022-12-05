@@ -7,6 +7,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MaterialModule } from './material/material.module';
 import { ResupplyPointComponent } from './resupply-timeline/resupply-point/resupply-point.component';
 import { ResupplyTimelineComponent } from './resupply-timeline/resupply-timeline.component';
+import { ResupplyLocationComponent } from './resupply-timeline/resupply-point/resupply-location/resupply-location.component';
 
 // DeclarationsToExport
 const components = [
@@ -40,6 +41,7 @@ const entryComponents: any[] = [];
     ...declarationsToExport,
     ResupplyTimelineComponent,
     ResupplyPointComponent,
+    ResupplyLocationComponent,
   ],
   exports: [
     ...declarationsToExport,

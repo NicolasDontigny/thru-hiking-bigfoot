@@ -5,22 +5,13 @@
   </div>
 
   <div
-    *ngFor="let location of point.locations"
+    *ngFor="let location of point.locations; let last = last"
     class="resupply-point-location-container"
   >
-    <pct-resupply-location [location]="location"></pct-resupply-location>
-    <!-- <div
-      *ngIf="colors"
-      [style.background-color]="colors.main"
-      [style.border-color]="colors.border"
-      class="timeline-color-circle"
-    >
-    </div>
-
-    <div>
-      <div class="resupply-point-name">{{ location.name }}</div>
-      <div class="resupply-point-miles-from-trail">{{ location.milesFromTrail }} miles from trail</div>
-    </div> -->
+    <pct-resupply-location
+      [location]="location"
+      [hideBorder]="last"
+    ></pct-resupply-location>
   </div>
 </div>
 

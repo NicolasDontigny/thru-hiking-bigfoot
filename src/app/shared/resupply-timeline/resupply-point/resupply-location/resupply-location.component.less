@@ -1,18 +1,9 @@
 @timeline-circle-diameter: 56px;
 @timeline-circle-border: 12px;
-@timeline-circle-left-margin: 12px;
 
-.resupply-point-location-container {
+.resupply-location-container {
   display: flex;
   align-items: center;
-}
-
-.resupply-point-name {
-  font-size: 18px;
-}
-
-.resupply-point-miles-from-trail {
-  font-size: 14px;
 }
 
 .timeline-color-circle {
@@ -22,6 +13,28 @@
   background-color: lightgreen;
   border: @timeline-circle-border solid;
   border-radius: 50%;
-  margin-left: @timeline-circle-left-margin;
-  margin-right: 24px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.resupply-location-name {
+  font-size: 18px;
+}
+
+.resupply-location-miles-from-trail {
+  font-size: 14px;
+}
+
+.resupply-location-connector-container {
+  height: 100%;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+
+  .resupply-location-connector {
+    width: 100%;
+    height: 4px;
+    background-color: blue;
+  }
 }

@@ -39,8 +39,10 @@ export class ResupplyLocationComponent implements OnInit {
   @Input()
   location!: ResupplyPointLocation;
 
-  colors: ResupplyColors | undefined;
+  @Input()
   hideBorder = false;
+
+  colors: ResupplyColors | undefined;
 
   constructor() { }
 

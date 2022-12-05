@@ -1,4 +1,4 @@
-<div class="resupply-point-location-container">
+<div class="resupply-location-container">
   <div
     *ngIf="colors"
     [style.background-color]="colors.main"
@@ -8,7 +8,14 @@
   </div>
 
   <div>
-    <div class="resupply-point-name">{{ location.name }}</div>
-    <div class="resupply-point-miles-from-trail">{{ location.milesFromTrail }} miles from trail</div>
+    <div class="resupply-location-name">{{ location.name }}</div>
+    <div class="resupply-location-miles-from-trail">{{ location.milesFromTrail }} miles from trail</div>
+  </div>
+
+  <div
+    *ngIf="!hideBorder"
+    class="resupply-location-connector-container"
+  >
+    <div class="resupply-location-connector"></div>
   </div>
 </div>

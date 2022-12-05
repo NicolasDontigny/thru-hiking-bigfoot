@@ -38,6 +38,12 @@ export class ResupplyTimelineComponent implements OnInit {
   nobo = true;
 
   ngOnInit(): void {
+    // Sort locations at the same mile marker by closest to trail
+    this.resupplyPoints.forEach(resupplyPoint => {
+      resupplyPoint.locations.sort((a, b) => a.milesFromTrail - b.milesFromTrail);
+    });
+
+    // Sort all locations by their mile marker
     this.resupplyPoints.sort((a, b) => this.nobo ? b.mileMarker - a.mileMarker : a.mileMarker - b.mileMarker);
   }
 }

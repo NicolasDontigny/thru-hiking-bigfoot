@@ -1,7 +1,6 @@
-import { faExclamationTriangle, faTimes, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 export const fontAwesomeSolidLibraryIcons = [
-  faTimes,
-  faExclamationTriangle,
-  faTimesCircle,
+  faChevronUp,
+  faChevronDown,
 ];

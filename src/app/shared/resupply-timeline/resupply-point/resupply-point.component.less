@@ -39,7 +39,7 @@
 }
 
 .timeline-bottom-connector-container {
-  position: relative;
+  display: flex;
 
   .timeline-bottom-connector {
     width: @timeline-connector-width;
@@ -47,5 +47,12 @@
     background-color: blue;
 
     margin-left: calc(@timeline-mile-marker-width + @timeline-circle-left-margin + @timeline-circle-border + (@timeline-circle-diameter / 2) - (@timeline-connector-width / 2));
+  }
+
+  .timeline-vertical-mile-marker {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
   }
 }

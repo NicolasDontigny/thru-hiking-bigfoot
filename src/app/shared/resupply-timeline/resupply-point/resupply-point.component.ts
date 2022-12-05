@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+
 import { ResupplyPoint, ResupplyType } from '../resupply-timeline.component';
 
 export interface ResupplyColors {
@@ -26,15 +27,13 @@ export const getResupplyMainColor: { [key in ResupplyType]: ResupplyColors } = {
   [ResupplyType.blue]: {
     main: 'lightgreen',
     border: 'green',
-  }
-}
-
-
+  },
+};
 
 @Component({
   selector: 'pct-resupply-point',
   templateUrl: './resupply-point.component.html',
-  styleUrls: ['./resupply-point.component.less']
+  styleUrls: ['./resupply-point.component.less'],
 })
 export class ResupplyPointComponent implements OnInit {
   @Input()
@@ -46,13 +45,14 @@ export class ResupplyPointComponent implements OnInit {
 
   colors: ResupplyColors | undefined;
   distanceFromNextResupply: number | undefined;
+  heightMileScale = 2;
   hideBorder = false;
 
   ngOnInit() {
     console.log('this.point: ', this.point);
     console.log('this.nextPoint: ', this.nextPoint);
 
-    const firstLocation = this.point.locations[0]
+    const firstLocation = this.point.locations[0];
     if (firstLocation === undefined) return;
 
     this.colors = getResupplyMainColor[firstLocation.resupplyType];

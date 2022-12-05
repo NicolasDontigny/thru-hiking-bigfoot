@@ -29,7 +29,7 @@ export interface ResupplyPoint {
 @Component({
   selector: 'pct-resupply-timeline',
   templateUrl: './resupply-timeline.component.html',
-  styleUrls: ['./resupply-timeline.component.less']
+  styleUrls: ['./resupply-timeline.component.less'],
 })
 export class ResupplyTimelineComponent implements OnInit {
   resupplyPoints: ResupplyPoint[] = [
@@ -42,7 +42,7 @@ export class ResupplyTimelineComponent implements OnInit {
           locationType: ResupplyLocationType.village,
           resupplyType: ResupplyType.yellow,
         },
-      ]
+      ],
     },
     {
       mileMarker: 2572.9,
@@ -53,7 +53,7 @@ export class ResupplyTimelineComponent implements OnInit {
           locationType: ResupplyLocationType.village,
           resupplyType: ResupplyType.red,
         },
-      ]
+      ],
     },
     {
       mileMarker: 2465.2,
@@ -64,12 +64,11 @@ export class ResupplyTimelineComponent implements OnInit {
           locationType: ResupplyLocationType.resort,
           resupplyType: ResupplyType.green,
         },
-      ]
-    }
-  ]
+      ],
+    },
+  ];
 
   ngOnInit(): void {
     console.log('timeline init');
   }
-
 }

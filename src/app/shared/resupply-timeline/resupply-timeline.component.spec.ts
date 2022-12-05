@@ -8,7 +8,7 @@ describe('ResupplyTimelineComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ResupplyTimelineComponent]
+      declarations: [ResupplyTimelineComponent],
     })
       .compileComponents();
 

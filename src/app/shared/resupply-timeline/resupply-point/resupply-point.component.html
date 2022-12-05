@@ -19,8 +19,19 @@
 </div>
 <div
   *ngIf="distanceFromNextResupply"
-  [style.height]="distanceFromNextResupply * 1.5 + 'px'"
+  [style.height]="distanceFromNextResupply * heightMileScale + 'px'"
   class="timeline-bottom-connector-container"
 >
   <div class="timeline-bottom-connector"></div>
+  <div class="timeline-vertical-mile-marker">
+    <fa-icon
+      class="icon mb-1"
+      icon="chevron-up"
+    ></fa-icon>
+    <span>{{ distanceFromNextResupply | number }} mi</span>
+    <fa-icon
+      class="icon mt-1"
+      icon="chevron-down"
+    ></fa-icon>
+  </div>
 </div>

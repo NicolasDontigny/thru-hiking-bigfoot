@@ -8,7 +8,7 @@ describe('ResupplyPointComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ResupplyPointComponent]
+      declarations: [ResupplyPointComponent],
     })
       .compileComponents();
 

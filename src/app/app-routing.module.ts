@@ -6,11 +6,11 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule),
     data: { routeName: 'Home' },
-  }
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }

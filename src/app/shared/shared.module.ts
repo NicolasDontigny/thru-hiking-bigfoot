@@ -3,9 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 import { MaterialModule } from './material/material.module';
-import { ResupplyTimelineComponent } from './resupply-timeline/resupply-timeline.component';
 import { ResupplyPointComponent } from './resupply-timeline/resupply-point/resupply-point.component';
+import { ResupplyTimelineComponent } from './resupply-timeline/resupply-timeline.component';
 
 // DeclarationsToExport
 const components = [

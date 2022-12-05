@@ -1,0 +1,17 @@
+<div class="resupply-location-details-container">
+  <h2 mat-dialog-title>{{ location.name }}</h2>
+  <div mat-dialog-content>
+    <div class="main-info">
+      <div class="main-title">Mile marker:</div>
+      <div class="main-data">{{ location.milesFromTrail }} miles</div>
+    </div>
+    <div class="distance-from-trail">Distance from trail: {{ location.milesFromTrail }} miles</div>
+  </div>
+  <div mat-dialog-actions>
+    <button
+      mat-button
+      mat-dialog-close
+      class="pct-button pct-button-main"
+    >Close</button>
+  </div>
+</div>

@@ -5,9 +5,10 @@ import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { MaterialModule } from './material/material.module';
+import { ResupplyLocationDetailsComponent } from './resupply-timeline/resupply-point/resupply-location/resupply-location-details/resupply-location-details.component';
+import { ResupplyLocationComponent } from './resupply-timeline/resupply-point/resupply-location/resupply-location.component';
 import { ResupplyPointComponent } from './resupply-timeline/resupply-point/resupply-point.component';
 import { ResupplyTimelineComponent } from './resupply-timeline/resupply-timeline.component';
-import { ResupplyLocationComponent } from './resupply-timeline/resupply-point/resupply-location/resupply-location.component';
 
 // DeclarationsToExport
 const components = [
@@ -42,6 +43,7 @@ const entryComponents: any[] = [];
     ResupplyTimelineComponent,
     ResupplyPointComponent,
     ResupplyLocationComponent,
+    ResupplyLocationDetailsComponent,
   ],
   exports: [
     ...declarationsToExport,

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'pct-root',
@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
     './app.component.less',
     './styles/index.less',
   ],
+  encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
   title = 'PCT-Resupply';

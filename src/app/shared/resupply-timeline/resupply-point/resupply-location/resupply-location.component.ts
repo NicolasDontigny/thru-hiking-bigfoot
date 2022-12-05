@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 
 import { ResupplyPointLocation, ResupplyType } from '../../resupply-timeline.component';
+import { ResupplyLocationDetailsComponent } from './resupply-location-details/resupply-location-details.component';
 
 export interface ResupplyColors {
   main: string;
@@ -40,13 +42,26 @@ export class ResupplyLocationComponent implements OnInit {
   location!: ResupplyPointLocation;
 
   @Input()
+  mileMarker!: number;
+
+  @Input()
   hideBorder = false;
 
   colors: ResupplyColors | undefined;
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.colors = getResupplyMainColor[this.location.resupplyType];
+  }
+
+  openDialog() {
+    this.dialog.open(ResupplyLocationDetailsComponent, {
+      // width: '400px',
+      data: {
+        location: this.location,
+        mileMarker: this.mileMarker,
+      },
+    });
   }
 }

@@ -1,20 +1,24 @@
-export interface ResupplyPointLocation {
-  name: string;
-  milesFromTrail: number;
-  locationType: ResupplyLocationType;
-  resupplyType: ResupplyType;
-  description: string;
-  recommendations?: string[];
-}
-
 export interface ResupplyPoint {
   mileMarker: number;
   locations: ResupplyPointLocation[];
 }
 
-export interface ResupplyColors {
-  main: string;
-  border: string;
+export interface ResupplyPointLocation {
+  name: string;
+  milesFromTrail: number;
+  locationType: ResupplyLocationType;
+  resupplyType: ResupplyType;
+  icons: {
+    favorite: boolean;
+    camping: boolean;
+    lodging: boolean;
+    restaurants: boolean;
+    grocery: boolean;
+    gearShop: boolean;
+    postOffice: boolean;
+  };
+  description: string;
+  recommendations?: string[];
 }
 
 export enum ResupplyLocationType {
@@ -29,4 +33,9 @@ export enum ResupplyType {
   orange,
   red,
   blue,
+}
+
+export interface ResupplyColors {
+  main: string;
+  border: string;
 }

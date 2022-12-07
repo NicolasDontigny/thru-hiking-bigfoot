@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import { Component } from '@angular/core';
-import { ResupplyLocationType, ResupplyPoint, ResupplyType } from 'src/app/shared/resupply-timeline/resupply-timeline.component';
+import { ResupplyLocationType, ResupplyPoint, ResupplyType } from 'src/app/models/resupply-point.model';
 
 @Component({
   selector: 'pct-home',

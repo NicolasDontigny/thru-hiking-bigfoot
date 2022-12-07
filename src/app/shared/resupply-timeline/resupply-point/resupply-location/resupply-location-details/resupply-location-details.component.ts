@@ -1,8 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-
-import { ResupplyPointLocation } from '../../../resupply-timeline.component';
-import { ResupplyColors } from '../resupply-location.component';
+import { getResupplyColorLegend } from 'src/app/constants/color-codes.constants';
+import { ResupplyColors, ResupplyPointLocation } from 'src/app/models/resupply-point.model';
 
 export interface ResupplyLocationDetails {
   location: ResupplyPointLocation;
@@ -18,6 +17,7 @@ export interface ResupplyLocationDetails {
 export class ResupplyLocationDetailsComponent {
   location: ResupplyPointLocation;
   mileMarker: number;
+  colorLegend: string;
   colors: ResupplyColors | undefined;
 
   constructor(
@@ -26,6 +26,7 @@ export class ResupplyLocationDetailsComponent {
   ) {
     this.location = locationDetails.location;
     this.mileMarker = locationDetails.mileMarker;
+    this.colorLegend = getResupplyColorLegend[locationDetails.location.resupplyType];
     this.colors = locationDetails.colors;
   }
 

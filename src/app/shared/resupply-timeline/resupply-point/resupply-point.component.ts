@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-
-import { ResupplyPoint } from '../resupply-timeline.component';
+import { ResupplyPoint } from 'src/app/models/resupply-point.model';
 
 @Component({
   selector: 'pct-resupply-point',
@@ -20,9 +19,6 @@ export class ResupplyPointComponent implements OnInit {
   heightMileScale = 2;
 
   ngOnInit() {
-    console.log('this.point: ', this.point);
-    console.log('this.nextPoint: ', this.nextPoint);
-
     if (this.nextPoint === undefined) return;
 
     this.distanceFromNextResupply = this.point.mileMarker - this.nextPoint.mileMarker;

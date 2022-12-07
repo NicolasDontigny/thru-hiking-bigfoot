@@ -1,17 +1,38 @@
 <div class="resupply-location-details-container">
   <h2 mat-dialog-title>{{ location.name }}</h2>
   <div mat-dialog-content>
+    <div class=""></div>
+    <div
+      *ngIf="colors"
+      class="main-info"
+    >
+      <div
+        [style.background-color]="colors.main"
+        [style.border-color]="colors.border"
+        class="resupply-location-details-color-code"
+      ></div>
+      <div class="resupply-location-details-color-description">Green</div>
+    </div>
     <div class="main-info">
       <div class="main-title">Mile marker:</div>
+      <div class="main-data">{{ mileMarker }} miles</div>
+    </div>
+    <div class="main-info">
+      <div class="main-title">Distance from trail:</div>
       <div class="main-data">{{ location.milesFromTrail }} miles</div>
     </div>
-    <div class="distance-from-trail">Distance from trail: {{ location.milesFromTrail }} miles</div>
+
+    <div class="mt-2">
+      <span class="location-description">{{ location.description }}</span>
+    </div>
   </div>
   <div mat-dialog-actions>
-    <button
-      mat-button
-      mat-dialog-close
-      class="pct-button pct-button-main"
-    >Close</button>
+    <div class="resupply-location-details-actions">
+      <button
+        mat-button
+        mat-dialog-close
+        class="pct-button pct-button-main"
+      >Close</button>
+    </div>
   </div>
 </div>

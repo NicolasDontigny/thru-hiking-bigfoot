@@ -61,6 +61,7 @@ export class ResupplyLocationComponent implements OnInit {
       data: {
         location: this.location,
         mileMarker: this.mileMarker,
+        colors: this.colors,
       },
     });
   }

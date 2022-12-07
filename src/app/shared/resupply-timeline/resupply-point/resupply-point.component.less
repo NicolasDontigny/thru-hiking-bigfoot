@@ -1,8 +1,8 @@
 @import './resupply-location/resupply-location.component.less';
 
-@timeline-connector-width: 4px;
-@timeline-mile-marker-width: 120px;
-@timeline-mile-marker-right-margin: 12px;
+@timeline-connector-width: 0.4rem;
+@timeline-mile-marker-width: 12rem;
+@timeline-mile-marker-right-margin: 1.2rem;
 
 .resupply-point-container {
   display: flex;
@@ -12,10 +12,10 @@
 .timeline-mile-marker {
   width: @timeline-mile-marker-width;
   text-align: right;
-  margin-right: 12px;
+  margin-right: @timeline-mile-marker-right-margin;
 
   .timeline-mile-marker-number {
-    font-size: 16px;
+    font-size: 1.8rem;
     font-weight: bold;
   }
 }

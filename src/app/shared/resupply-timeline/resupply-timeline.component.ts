@@ -19,6 +19,8 @@ export interface ResupplyPointLocation {
   milesFromTrail: number;
   locationType: ResupplyLocationType;
   resupplyType: ResupplyType;
+  description: string;
+  recommendations?: string[];
 }
 
 export interface ResupplyPoint {

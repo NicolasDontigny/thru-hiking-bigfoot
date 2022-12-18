@@ -289,8 +289,8 @@ export class HomeComponent {
           description: '',
           icons: {
             favorite: false,
-            camping: false,
-            lodging: false,
+            camping: true,
+            lodging: true,
             restaurants: false,
             grocery: false,
             gearShop: false,
@@ -299,5 +299,294 @@ export class HomeComponent {
         },
       ],
     },
+    {
+      mileMarker: 1996.1,
+      locations: [
+        {
+          name: 'Big Lake Youth Camp',
+          milesFromTrail: 0,
+          locationType: ResupplyLocationType.resort,
+          resupplyType: ResupplyType.red,
+          description: '',
+          icons: {
+            favorite: true,
+            camping: false,
+            lodging: false,
+            restaurants: true,
+            grocery: false,
+            gearShop: false,
+            postOffice: true,
+          },
+        },
+      ],
+    },
+    {
+      mileMarker: 1983.8,
+      locations: [
+        {
+          // Also at 2000.9
+          name: 'Sisters',
+          milesFromTrail: 24.4,
+          locationType: ResupplyLocationType.town,
+          resupplyType: ResupplyType.green,
+          description: '',
+          icons: {
+            favorite: true,
+            camping: true,
+            lodging: true,
+            restaurants: true,
+            grocery: true,
+            gearShop: true,
+            postOffice: true,
+          },
+        },
+        {
+          // Also at 2000.9
+          name: 'Bend',
+          milesFromTrail: 38.1,
+          locationType: ResupplyLocationType.town,
+          resupplyType: ResupplyType.green,
+          description: '',
+          icons: {
+            favorite: false,
+            camping: true,
+            lodging: true,
+            restaurants: true,
+            grocery: true,
+            gearShop: true,
+            postOffice: true,
+          },
+        },
+      ],
+    },
+    {
+      mileMarker: 1952.6,
+      locations: [
+        {
+          name: 'Elk Lake Resort',
+          milesFromTrail: 1,
+          locationType: ResupplyLocationType.resort,
+          resupplyType: ResupplyType.red,
+          description: '',
+          icons: {
+            favorite: false,
+            camping: false,
+            lodging: true,
+            restaurants: true,
+            grocery: false,
+            gearShop: false,
+            postOffice: false,
+          },
+        },
+      ],
+    },
+    {
+      mileMarker: 1906.6,
+      locations: [
+        {
+          name: 'Shelter Cove Resort',
+          milesFromTrail: 1,
+          locationType: ResupplyLocationType.resort,
+          resupplyType: ResupplyType.red,
+          description: '',
+          icons: {
+            favorite: false,
+            camping: false,
+            lodging: true,
+            restaurants: true,
+            grocery: false,
+            gearShop: false,
+            postOffice: true,
+          },
+        },
+      ],
+    },
+    {
+      mileMarker: 1826,
+      locations: [
+        {
+          name: 'Crater Lake National Park',
+          // Need to verify
+          milesFromTrail: 1,
+          locationType: ResupplyLocationType.village,
+          resupplyType: ResupplyType.red,
+          description: '',
+          icons: {
+            favorite: false,
+            camping: false,
+            lodging: true,
+            restaurants: true,
+            grocery: false,
+            gearShop: false,
+            postOffice: true,
+          },
+        },
+      ],
+    },
+    {
+      mileMarker: 1821.7,
+      locations: [
+        {
+          name: 'Mazama Village',
+          milesFromTrail: 0.6,
+          locationType: ResupplyLocationType.village,
+          resupplyType: ResupplyType.orange,
+          description: '',
+          icons: {
+            favorite: false,
+            camping: true,
+            lodging: false,
+            restaurants: true,
+            grocery: false,
+            gearShop: false,
+            // Not Post Office
+            postOffice: true,
+          },
+        },
+      ],
+    },
+    {
+      mileMarker: 1773.2,
+      locations: [
+        {
+          name: 'Fish Lake Resort',
+          milesFromTrail: 2,
+          locationType: ResupplyLocationType.resort,
+          resupplyType: ResupplyType.red,
+          description: '',
+          icons: {
+            favorite: false,
+            camping: false,
+            lodging: true,
+            restaurants: true,
+            grocery: false,
+            gearShop: false,
+            postOffice: false,
+          },
+        },
+      ],
+    },
+    {
+      mileMarker: 1742.7,
+      locations: [
+        {
+          name: 'Hyatt Lake Resort',
+          milesFromTrail: 1.5,
+          locationType: ResupplyLocationType.resort,
+          resupplyType: ResupplyType.red,
+          description: '',
+          icons: {
+            favorite: false,
+            camping: false,
+            lodging: true,
+            restaurants: true,
+            grocery: false,
+            gearShop: false,
+            postOffice: false,
+          },
+        },
+      ],
+    },
+    {
+      mileMarker: 1718,
+      locations: [
+        {
+          name: 'Callahan\'s Lodge',
+          milesFromTrail: 0.25,
+          locationType: ResupplyLocationType.resort,
+          resupplyType: ResupplyType.red,
+          description: '',
+          icons: {
+            // Need more info
+            favorite: false,
+            camping: true,
+            lodging: true,
+            restaurants: true,
+            grocery: false,
+            gearShop: false,
+            postOffice: true,
+          },
+        },
+        {
+          name: 'Ashland',
+          milesFromTrail: 11,
+          locationType: ResupplyLocationType.town,
+          resupplyType: ResupplyType.green,
+          description: '',
+          icons: {
+            favorite: true,
+            camping: true,
+            lodging: true,
+            restaurants: true,
+            grocery: true,
+            gearShop: true,
+            postOffice: true,
+          },
+        },
+      ],
+    },
+    // {
+    //   mileMarker: 0,
+    //   locations: [
+    //     {
+    //       name: '',
+    //       milesFromTrail: 0,
+    //       locationType: ResupplyLocationType.village,
+    //       resupplyType: ResupplyType.orange,
+    //       description: '',
+    //       icons: {
+    //         favorite: false,
+    //         camping: true,
+    //         lodging: false,
+    //         restaurants: true,
+    //         grocery: false,
+    //         gearShop: false,
+    //         postOffice: true,
+    //       },
+    //     },
+    //   ],
+    // },
+    // {
+    //   mileMarker: 0,
+    //   locations: [
+    //     {
+    //       name: '',
+    //       milesFromTrail: 0,
+    //       locationType: ResupplyLocationType.village,
+    //       resupplyType: ResupplyType.orange,
+    //       description: '',
+    //       icons: {
+    //         favorite: false,
+    //         camping: true,
+    //         lodging: false,
+    //         restaurants: true,
+    //         grocery: false,
+    //         gearShop: false,
+    //         postOffice: true,
+    //       },
+    //     },
+    //   ],
+    // },
+    // {
+    //   mileMarker: 0,
+    //   locations: [
+    //     {
+    //       name: '',
+    //       milesFromTrail: 0,
+    //       locationType: ResupplyLocationType.village,
+    //       resupplyType: ResupplyType.orange,
+    //       description: '',
+    //       icons: {
+    //         favorite: false,
+    //         camping: true,
+    //         lodging: false,
+    //         restaurants: true,
+    //         grocery: false,
+    //         gearShop: false,
+    //         postOffice: true,
+    //       },
+    //     },
+    //   ],
+    // },
   ];
 }

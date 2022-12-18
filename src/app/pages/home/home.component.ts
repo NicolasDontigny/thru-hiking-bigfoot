@@ -178,5 +178,126 @@ export class HomeComponent {
         },
       ],
     },
+    {
+      mileMarker: 2229.9,
+      locations: [
+        {
+          name: 'Trout Lake',
+          milesFromTrail: 13,
+          locationType: ResupplyLocationType.village,
+          resupplyType: ResupplyType.orange,
+          description: '',
+          icons: {
+            favorite: false,
+            camping: true,
+            lodging: false,
+            restaurants: true,
+            grocery: true,
+            gearShop: false,
+            postOffice: true,
+          },
+        },
+      ],
+    },
+    {
+      mileMarker: 2148.2,
+      locations: [
+        {
+          name: 'Cascade Locks',
+          milesFromTrail: 0,
+          locationType: ResupplyLocationType.town,
+          resupplyType: ResupplyType.green,
+          description: '',
+          icons: {
+            favorite: false,
+            camping: true,
+            lodging: true,
+            restaurants: true,
+            grocery: true,
+            gearShop: true,
+            postOffice: true,
+          },
+        },
+        {
+          name: 'Portland',
+          milesFromTrail: 44,
+          locationType: ResupplyLocationType.town,
+          resupplyType: ResupplyType.green,
+          description: '',
+          icons: {
+            favorite: false,
+            camping: true,
+            lodging: true,
+            restaurants: true,
+            grocery: true,
+            gearShop: true,
+            postOffice: true,
+          },
+        },
+      ],
+    },
+    {
+      mileMarker: 2097.9,
+      locations: [
+        {
+          name: 'Timberline Lodge',
+          milesFromTrail: 0,
+          locationType: ResupplyLocationType.resort,
+          resupplyType: ResupplyType.red,
+          description: '',
+          icons: {
+            favorite: true,
+            camping: true,
+            lodging: false,
+            restaurants: true,
+            grocery: false,
+            gearShop: false,
+            postOffice: false,
+          },
+        },
+      ],
+    },
+    {
+      mileMarker: 2087.5,
+      locations: [
+        {
+          name: 'Government Camp',
+          milesFromTrail: 7.9,
+          locationType: ResupplyLocationType.village,
+          resupplyType: ResupplyType.yellow,
+          description: '',
+          icons: {
+            favorite: false,
+            camping: false,
+            lodging: false,
+            restaurants: false,
+            grocery: true,
+            gearShop: false,
+            postOffice: true,
+          },
+        },
+      ],
+    },
+    {
+      mileMarker: 2046.6,
+      locations: [
+        {
+          name: 'Olallie Lake Resort',
+          milesFromTrail: 0.1,
+          locationType: ResupplyLocationType.resort,
+          resupplyType: ResupplyType.red,
+          description: '',
+          icons: {
+            favorite: false,
+            camping: false,
+            lodging: false,
+            restaurants: false,
+            grocery: false,
+            gearShop: false,
+            postOffice: false,
+          },
+        },
+      ],
+    },
   ];
 }

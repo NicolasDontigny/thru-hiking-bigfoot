@@ -30,7 +30,7 @@ export class ResupplyLocationComponent implements OnInit {
 
   openDialog() {
     this.dialog.open(ResupplyLocationDetailsComponent, {
-      // width: '400px',
+      maxWidth: '50vw',
       data: {
         location: this.location,
         mileMarker: this.mileMarker,

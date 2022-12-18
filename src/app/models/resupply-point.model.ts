@@ -16,6 +16,7 @@ export interface ResupplyPointLocation {
     grocery: boolean;
     gearShop: boolean;
     postOffice: boolean;
+    box?: boolean;
   };
   description: string;
   recommendations?: string[];

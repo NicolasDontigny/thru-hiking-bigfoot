@@ -1,3 +1,15 @@
+@mat-toolbar-height: 6.4rem;
+
+:host {
+  width: 100vw;
+
+  ng-deep {
+    .mat-toolbar {
+      height: @mat-toolbar-height;
+    }
+  }
+}
+
 .toolbar-spacer {
   flex: 1 1 auto;
 }
@@ -7,13 +19,16 @@
 }
 
 .container {
-  width: 95vw;
-  max-width: 95vw;
+  width: 100vw;
+  max-width: 100vw;
+  padding: 0 2rem;
+
+  height: calc(100vh - @mat-toolbar-height);
+  overflow-y: auto;
 }
 
 @media (min-width: 600px) {
   .container {
-    width: 90vw;
-    max-width: 90vw;
+    padding: 0 3rem;
   }
 }

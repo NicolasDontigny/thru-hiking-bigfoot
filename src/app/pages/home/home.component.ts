@@ -9,4 +9,6 @@ import { pctResupplyPoints } from 'src/app/data/pct-resupply-points.data';
 })
 export class HomeComponent {
   pctResupplyPoints = pctResupplyPoints;
+
+  nobo = true;
 }

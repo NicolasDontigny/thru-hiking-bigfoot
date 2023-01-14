@@ -1,9 +1,24 @@
 <div id="home-container">
-  <h1>
-    PCT Resupply Guide
-  </h1>
+  <div id="home-header-container">
+    <h1 class="mb-0">
+      PCT Resupply Guide
+    </h1>
+    <mat-radio-group
+      aria-label="Select direction"
+      [(ngModel)]="nobo"
+    >
+      <mat-radio-button [value]="true">NOBO</mat-radio-button>
+      <mat-radio-button
+        [value]="false"
+        class="ms-3"
+      >SOBO</mat-radio-button>
+    </mat-radio-group>
+  </div>
 
   <div id="home-timeline-container">
-    <pct-resupply-timeline [resupplyPoints]="pctResupplyPoints"></pct-resupply-timeline>
+    <pct-resupply-timeline
+      [resupplyPoints]="pctResupplyPoints"
+      [nobo]="nobo"
+    ></pct-resupply-timeline>
   </div>
 </div>

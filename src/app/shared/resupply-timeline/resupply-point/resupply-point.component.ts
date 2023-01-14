@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { ResupplyPoint } from 'src/app/models/resupply-point.model';
 
 @Component({
@@ -6,7 +6,7 @@ import { ResupplyPoint } from 'src/app/models/resupply-point.model';
   templateUrl: './resupply-point.component.html',
   styleUrls: ['./resupply-point.component.less'],
 })
-export class ResupplyPointComponent implements OnInit {
+export class ResupplyPointComponent implements OnInit, OnChanges {
   @Input()
   point!: ResupplyPoint;
 
@@ -14,14 +14,33 @@ export class ResupplyPointComponent implements OnInit {
   // Will be undefined if resupplyPoint is last in the list
   nextPoint: ResupplyPoint | undefined;
 
+  @Input()
+  nobo = true;
+
   // colors: ResupplyColors | undefined;
   distanceFromNextResupply: number | undefined;
   heightMileScale = 2;
 
   ngOnInit() {
-    if (this.nextPoint === undefined) return;
+    this.calculateDistance();
+  }
 
-    this.distanceFromNextResupply = this.point.mileMarker - this.nextPoint.mileMarker;
-    console.log('this.distanceFromNextResupply: ', this.distanceFromNextResupply);
+  ngOnChanges(simpleChanges: SimpleChanges) {
+    if (simpleChanges['nobo']) {
+      this.calculateDistance();
+    }
+  }
+
+  private calculateDistance() {
+    console.log('this.point: ', this.point);
+    console.log('this.nextPoint: ', this.nextPoint);
+    if (this.nextPoint === undefined) {
+      this.distanceFromNextResupply = undefined;
+      return;
+    }
+
+    this.distanceFromNextResupply = this.nobo
+      ? this.nextPoint.mileMarker - this.point.mileMarker
+      : this.point.mileMarker - this.nextPoint.mileMarker;
   }
 }

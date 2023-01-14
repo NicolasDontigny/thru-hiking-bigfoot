@@ -89,6 +89,7 @@
         size="2x"
       ></fa-icon>
       <fa-icon
+        *ngIf="!location.icons.postOffice"
         matTooltip="Can Ship a Box"
         matTooltipPosition="above"
         #tooltipBox="matTooltip"
@@ -99,6 +100,7 @@
         size="2x"
       ></fa-icon>
       <fa-icon
+        *ngIf="!location.icons.grocery"
         matTooltip="Store"
         matTooltipPosition="above"
         #tooltipStore="matTooltip"

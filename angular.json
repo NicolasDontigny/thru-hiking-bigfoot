@@ -79,10 +79,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "PCT-Resupply:build:production"
+              "browserTarget": "thru-hiking-bigfoot:build:production"
             },
             "development": {
-              "browserTarget": "PCT-Resupply:build:development"
+              "browserTarget": "thru-hiking-bigfoot:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -90,7 +90,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "PCT-Resupply:build"
+            "browserTarget": "thru-hiking-bigfoot:build"
           }
         },
         "test": {

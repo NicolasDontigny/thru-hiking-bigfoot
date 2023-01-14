@@ -1,4 +1,4 @@
-import { faCampground, faCartShopping, faChevronDown, faChevronUp, faCutlery, faEnvelope, faGear, faHeart, faHotel } from '@fortawesome/free-solid-svg-icons';
+import { faBoxOpen, faCampground, faCartShopping, faChevronDown, faChevronUp, faCutlery, faEnvelope, faGear, faHeart, faHotel, faStoreAlt } from '@fortawesome/free-solid-svg-icons';
 
 export const fontAwesomeSolidLibraryIcons = [
   faCampground,
@@ -10,4 +10,6 @@ export const fontAwesomeSolidLibraryIcons = [
   faCartShopping,
   faGear,
   faEnvelope,
+  faBoxOpen,
+  faStoreAlt,
 ];

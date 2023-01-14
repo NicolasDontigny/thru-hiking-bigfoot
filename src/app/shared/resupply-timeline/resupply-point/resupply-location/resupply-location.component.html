@@ -12,7 +12,16 @@
     </div>
 
     <div>
-      <div class="resupply-location-name">{{ location.name }}</div>
+      <div class="resupply-location-name">
+        <span>{{ location.name }}</span>
+        <fa-icon
+          *ngIf="location.icons.favorite"
+          matTooltip="Favorite"
+          matTooltipPosition="above"
+          class="icon m-2"
+          icon="heart"
+        ></fa-icon>
+      </div>
       <div class="resupply-location-miles-from-trail">{{ location.milesFromTrail }} miles from trail</div>
     </div>
   </div>

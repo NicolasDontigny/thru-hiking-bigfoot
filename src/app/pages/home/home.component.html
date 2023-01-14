@@ -4,13 +4,14 @@
       PCT Resupply Guide
     </h1>
     <mat-radio-group
+      class="direction-radio-group"
       aria-label="Select direction"
       [(ngModel)]="nobo"
     >
       <mat-radio-button [value]="true">NOBO</mat-radio-button>
       <mat-radio-button
         [value]="false"
-        class="ms-3"
+        class="sobo-button"
       >SOBO</mat-radio-button>
     </mat-radio-group>
   </div>

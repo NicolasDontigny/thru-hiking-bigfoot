@@ -5,6 +5,8 @@
       *ngIf="location.icons.favorite"
       matTooltip="This is a Favorite"
       matTooltipPosition="above"
+      #tooltipFavorite="matTooltip"
+      (click)="tooltipFavorite.toggle()"
       class="icon"
       icon="heart"
       size="lg"
@@ -29,6 +31,8 @@
       <fa-icon
         matTooltip="Camping"
         matTooltipPosition="above"
+        #tooltipCamping="matTooltip"
+        (click)="tooltipCamping.toggle()"
         class="icon"
         [class.active]="location.icons.camping"
         icon="campground"
@@ -37,6 +41,8 @@
       <fa-icon
         matTooltip="Lodging"
         matTooltipPosition="above"
+        #tooltipLodging="matTooltip"
+        (click)="tooltipLodging.toggle()"
         class="icon"
         [class.active]="location.icons.lodging"
         icon="hotel"
@@ -45,6 +51,8 @@
       <fa-icon
         matTooltip="Restaurant(s)"
         matTooltipPosition="above"
+        #tooltipRestaurants="matTooltip"
+        (click)="tooltipRestaurants.toggle()"
         class="icon"
         [class.active]="location.icons.restaurants"
         icon="cutlery"
@@ -53,6 +61,8 @@
       <fa-icon
         matTooltip="Grocery Store(s)"
         matTooltipPosition="above"
+        #tooltipGrocery="matTooltip"
+        (click)="tooltipGrocery.toggle()"
         class="icon"
         [class.active]="location.icons.grocery"
         icon="cart-shopping"
@@ -61,6 +71,8 @@
       <fa-icon
         matTooltip="Gear Shop(s)"
         matTooltipPosition="above"
+        #tooltipGearShop="matTooltip"
+        (click)="tooltipGearShop.toggle()"
         class="icon"
         [class.active]="location.icons.gearShop"
         icon="gear"
@@ -69,6 +81,8 @@
       <fa-icon
         matTooltip="Post Office"
         matTooltipPosition="above"
+        #tooltipPostOffice="matTooltip"
+        (click)="tooltipPostOffice.toggle()"
         class="icon"
         [class.active]="location.icons.postOffice"
         icon="envelope"
@@ -77,6 +91,8 @@
       <fa-icon
         matTooltip="Can Ship a Box"
         matTooltipPosition="above"
+        #tooltipBox="matTooltip"
+        (click)="tooltipBox.toggle()"
         class="icon"
         [class.active]="location.icons.postOffice || location.icons.box"
         icon="box-open"
@@ -85,6 +101,8 @@
       <fa-icon
         matTooltip="Store"
         matTooltipPosition="above"
+        #tooltipStore="matTooltip"
+        (click)="tooltipStore.toggle()"
         class="icon"
         [class.active]="location.icons.store"
         icon="store-alt"
